@@ -13,7 +13,8 @@ const Container = styled.div`
     justify-content:center;
     justify-content: space-evenly;
     padding:3%;
-    background: rgba(0, 0, 0, 0.5);;
+    background: rgba(0, 0, 0, 0.5);
+    margin-bottom: 5%;
 `;
 
 

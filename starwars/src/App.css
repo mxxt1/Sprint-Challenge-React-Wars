@@ -4,5 +4,9 @@
 .Header {
   color: #FFE81F;;
   text-shadow: 1px 1px 5px black;
+  font-size: 5rem;
+  letter-spacing: 5px;
+  word-spacing: 20px;
+  margin: 0 auto;
 }
 /* write your parent styles in here for your App.js */
