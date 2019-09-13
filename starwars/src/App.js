@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import CharContainer from '../src/components/CharCard'
+import CharContainer from '../src/components/CharContainer'
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -20,8 +20,6 @@ const App = () => {
       <h1 className="Header">React Wars</h1>
       <CharContainer />
       </div>
-    
-
   );
 }
 
