@@ -25,7 +25,7 @@ const CardTitle = styled.h1`
 const CardItem = styled.p`
     letter-spacing: 2px;
     word-spacing: 2px;
-    padding:0 0 0 30%;
+    padding:0 0 0 28%;
 
 `;
 
