@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
-import styled from "styled-components";
-import CharCard from "./CharCard"
+import styled from 'styled-components';
+import CharCard from './CharCard';
 import axios from 'axios';
 
 
@@ -39,7 +39,7 @@ const CharContainer = () => {
         .catch(error => {
         console.log(`Error: `,error);
         })
-    })
+    },[])
 
     console.log(starChars);
 

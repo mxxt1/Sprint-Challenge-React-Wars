@@ -15,10 +15,11 @@ const CardTitle = styled.h1`
     align-items: center;
     justify-content: center;
     padding-bottom: 5%;
+    text-shadow: 1px 1px 2px white;
 `;
 
 const CardItem = styled.p`
-
+    letter-spacing: 2px;
 
 `;
 
@@ -30,10 +31,10 @@ const CharCard = (props) =>{
     return(
     <Card> 
         <CardTitle>{props.name}</CardTitle>
-        <CardItem>Height: {props.height}</CardItem>
-        <CardItem>Weight: {props.weight}</CardItem>
-        <CardItem>Gender: {props.gender}</CardItem>
-        <CardItem>Born: {props.birthYear}</CardItem>
+        <CardItem>Height:  {props.height} Centimeters</CardItem>
+        <CardItem>Weight:  {props.weight} Kilograms</CardItem>
+        <CardItem>Sex:  {props.gender}</CardItem>
+        <CardItem>Born:  {props.birthYear}</CardItem>
         
     </Card>    
     )
