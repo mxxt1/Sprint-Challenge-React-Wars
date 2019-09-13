@@ -1,7 +1,26 @@
 import React, {useState, useEffect} from 'react';
-// import styled from "styled-components";
+import styled from "styled-components";
 import CharCard from "./CharCard"
 import axios from 'axios';
+
+
+const Container = styled.div`
+    border:2px solid black;
+    width: 80%;
+    margin: 0 auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    justify-content: space-evenly;
+    padding:3%;
+    background: rgba(0, 0, 0, 0.5);;
+
+
+
+`;
+
+
+
 
 
 
@@ -25,7 +44,7 @@ const CharContainer = () => {
     console.log(starChars);
 
     return(
-        <div>
+        <Container>
         {starChars.map(character => {
             return(
                 <CharCard 
@@ -39,9 +58,9 @@ const CharContainer = () => {
                 // skinColor = {character.skin_color}
                 // hairColor = {character.hair_color}
                 />
-            );
-        })};
-      </div>  
+            )
+        })}
+      </Container>  
   )
 }
 
