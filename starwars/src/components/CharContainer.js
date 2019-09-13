@@ -27,7 +27,7 @@ const CharContainer = () => {
     useEffect(() => {
         axios.get('https://swapi.co/api/people/')
         .then((response) => {
-        console.log(response);
+        // console.log(response);
         console.log(response.data.results);
         setStarChars(response.data.results);
         })
@@ -36,7 +36,7 @@ const CharContainer = () => {
         })
     },[])
 
-    console.log(starChars);
+    // console.log(starChars);
 
     return(
         <Container>
