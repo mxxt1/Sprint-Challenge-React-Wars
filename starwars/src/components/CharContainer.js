@@ -14,13 +14,7 @@ const Container = styled.div`
     justify-content: space-evenly;
     padding:3%;
     background: rgba(0, 0, 0, 0.5);;
-
-
-
 `;
-
-
-
 
 
 
@@ -37,7 +31,7 @@ const CharContainer = () => {
         setStarChars(response.data.results);
         })
         .catch(error => {
-        console.log(`Error: `,error);
+        console.log('Error: ', error);
         })
     },[])
 
@@ -54,9 +48,9 @@ const CharContainer = () => {
                 weight = {character.mass}
                 birthYear = {character.birth_year}
                 gender = {character.gender}
-                // eyeColor = {character.eye_color}
-                // skinColor = {character.skin_color}
-                // hairColor = {character.hair_color}
+                eyeColor = {character.eye_color}
+                skinColor = {character.skin_color}
+                hairColor = {character.hair_color}
                 />
             )
         })}
